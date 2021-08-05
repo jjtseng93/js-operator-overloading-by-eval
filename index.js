@@ -95,8 +95,9 @@ CalcExp=(s)=>
   {
     while( s.match(/\(.*?\)/) )
     {
+	    let i=ntoa(CalcExp.c++);
       s=s.replace(  /\(.*?\)/  ,
-                   rs=>CalcExp(  rs.slice(1,-1)  )
+                   rs=>(CalcExp.obj[i]=CalcExp(  rs.slice(1,-1)  ),"CalcExp.obj."+i)
                    );
     }
     return CalcExp(s);
