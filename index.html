@@ -10,14 +10,14 @@
 <script src="index.js"></script>
 
 <body>
-  <textarea style="width:98vw;height:300px;">
+  <textarea id="jstest" style="width:98vw;height:300px;">
 x=[1,2,3]
 y=[4,5,6]
   
 alert(AlgebraCalc("y**x"));
 // Expected: [4,25,216]
   </textarea> <br>
-  <button onclick="eval(this.previousElementSibling.value)">Test</button>
+  <button onclick="eval(jstest.value)">Test</button>
 </body>
 
 </html>
