@@ -2,7 +2,7 @@
 - This small piece of code Overloads JavaScript arithmetic operators by evaluating expressions as strings
 - My intention was to make operating Tensors easier so that JavaScript catches up with Python on Machine Learning and Artificial Intelligence
 # Usage
-- Since this is still in development, just copy the content of index.js directly and embed it into your code
+- Since this is still in development, just copy [the content of index.js](https://github.com/jjtseng93/js-operator-overloading-by-eval/blob/main/index.js) directly and embed it into your code
 - Example of use
 ```
 let x=[1,2,3]
