@@ -11,12 +11,18 @@ let y=[4,5,6]
 AlgebraCalc("x+y")
 // Expected: [5,7,9]
 
-AlgebraCalc("2*x+1")
-// Expected: [3,5,7]
+AlgebraCalc("y**x")
+// Expected: [4,25,216]
+
+AlgebraCalc("2*x-1")
+// Expected: [1,3,5]
+
+AlgebraCalc("x**2+6/3")
+// Expected: [3,6,11]
 
 AlgebraCalc("expression", { add: custom_addition_receiving_a_b, sub: custom_subtraction_receiving_a_b }, true)
-// Override with your custom operator functions by the 2nd parameter
-// set debug_mode to true to show every single calculation, e.g. 3,+,7
+// Override with your custom operator functions by the 2nd parameter as objects
+// set debug_mode to true to show every single calculation by alert, e.g. 3,+,7
 
 ```
 - Operands can only have names containing alphabets, numbers, underscores(_), dots(.)
