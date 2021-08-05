@@ -2,11 +2,15 @@
 - This small piece of code Overloads JavaScript arithmetic operators by evaluating expressions as strings
 - My intention was to make operating Tensors easier so that JavaScript catches up with Python on Machine Learning and Artificial Intelligence
 # Usage
+- WARNING: PUT eval(AlgebraCalc.toString()) BEFORE DOING CALCULATION TO PREVENT LOCAL VARIABLES UNACCESSIBLE
 - Since this is still in development, just copy [the content of index.js](https://github.com/jjtseng93/js-operator-overloading-by-eval/blob/main/index.js) directly and embed it into your code
 - Example of use, or [LIVE DEMO HERE](https://jjtseng93.github.io/js-operator-overloading-by-eval/)
 ```
 let x=[1,2,3]
 let y=[4,5,6]
+
+eval(AlgebraCalc.toString());
+// THIS LINE IS ESSENTIAL FOR FOR ACCESSING LOCAL VARIABLES!!!!!
 
 AlgebraCalc("x+y")
 // Expected: [5,7,9]
